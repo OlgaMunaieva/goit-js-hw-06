@@ -14,7 +14,10 @@ const images = [
 ];
 
 const markupForImagesEl = images
-  .map(({ url, alt } = image) => `<li><img src="${url}" alt="${alt}"></li>`)
+  .map(
+    ({ url, alt } = image) =>
+      `<li><img class="image" src="${url}" alt="${alt}"></li>`
+  )
   .join("");
 // console.log(markupForImagesEl);
 
