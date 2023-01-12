@@ -16,10 +16,10 @@ const images = [
 const markupForImagesEl = images
   .map(({ url, alt } = image) => `<li><img src="${url}" alt="${alt}"></li>`)
   .join("");
-console.log(markupForImagesEl);
+// console.log(markupForImagesEl);
 
 const listEl = document.querySelector(".gallery");
 
 listEl.insertAdjacentHTML("beforeend", markupForImagesEl);
 
-console.log(document);
+// console.log(document);
