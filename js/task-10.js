@@ -4,11 +4,15 @@ function getRandomHexColor() {
 
 const collectionCreationBlock = document.getElementById("controls");
 
-const inputEl = collectionCreationBlock.children[0];
+const inputEl = collectionCreationBlock.querySelector("input[type='number']");
 
-const buttonCreate = collectionCreationBlock.children[1];
+const buttonCreate = collectionCreationBlock.querySelector(
+  "button[data-create]"
+);
 
-const buttonDestroy = collectionCreationBlock.children[2];
+const buttonDestroy = collectionCreationBlock.querySelector(
+  "button[data-destroy]"
+);
 
 const firstBoxSize = 30;
 const increaseNextBoxes = 10;
